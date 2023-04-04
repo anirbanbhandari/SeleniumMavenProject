@@ -43,6 +43,7 @@ public class Program1 {
 		report.endTest(test);		
 		
 		report.flush();
+		
 	}
 
 }
