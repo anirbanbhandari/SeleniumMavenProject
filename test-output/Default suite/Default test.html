@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 03 14:19:07 IST 2023</td>
+<td>Started on:</td><td>Thu Apr 06 08:56:38 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47868 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9757 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='day07.Program3.testCase()'><b>testCase</b><br>Test class: day07.Program3<br>Parameters: user2, pwd2</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from target frame detached
-  (Session info: MicrosoftEdge=111.0.1661.62)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+<td title='day09.Program2.testCase_Chrome_1()'><b>testCase_Chrome_1</b><br>Test class: day09.Program2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;password22&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [b84735118634947c954ca54bef82e275, clickElement {id=a1461f94-1c72-454c-b098-a4696c1925f5}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, ms:edgeOptions: {debuggerAddress: localhost:64140}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\anirb\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64140/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (b84735118634947c954ca54bef82e275)] -&gt; name: btnLogin]
-Session ID: b84735118634947c954ca54bef82e275
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23a88e7775da8d69c279340ba8ab2c74, findElement {using=name, value=password22}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\anirb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23a88e7775da8d69c279340ba8ab2c74
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,13 +93,15 @@ Session ID: b84735118634947c954ca54bef82e275
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at day07.Program3.testCase(Program3.java:17)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at day09.Program2.testCase_Chrome_1(Program2.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,17 +130,16 @@ Session ID: b84735118634947c954ca54bef82e275
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace954937264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace954937264'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from target frame detached
-  (Session info: MicrosoftEdge=111.0.1661.62)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+</pre></div><a href='#' onClick='toggleBox("stack-trace10001825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10001825'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;password22&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [b84735118634947c954ca54bef82e275, clickElement {id=a1461f94-1c72-454c-b098-a4696c1925f5}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, ms:edgeOptions: {debuggerAddress: localhost:64140}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\anirb\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64140/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (b84735118634947c954ca54bef82e275)] -&gt; name: btnLogin]
-Session ID: b84735118634947c954ca54bef82e275
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23a88e7775da8d69c279340ba8ab2c74, findElement {using=name, value=password22}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\anirb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63258}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23a88e7775da8d69c279340ba8ab2c74
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -148,13 +148,15 @@ Session ID: b84735118634947c954ca54bef82e275
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at day07.Program3.testCase(Program3.java:17)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at day09.Program2.testCase_Chrome_1(Program2.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,26 +186,8 @@ Session ID: b84735118634947c954ca54bef82e275
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>27</td>
-<td>day07.Program3@333291e3</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='day07.Program3.testCase()'><b>testCase</b><br>Test class: day07.Program3<br>Parameters: user3, pwd3</td>
-<td></td>
 <td>7</td>
-<td>day07.Program3@333291e3</td></tr>
-<tr>
-<td title='day07.Program3.testCase()'><b>testCase</b><br>Test class: day07.Program3<br>Parameters: user1, pwd1</td>
-<td></td>
-<td>12</td>
-<td>day07.Program3@333291e3</td></tr>
+<td>day09.Program2@1a451d4d</td></tr>
 </table><p>
 </body>
 </html>
